@@ -1,0 +1,6 @@
+{
+  "name": "ml-snippeting",
+  "version": "1.0.0",
+  "description": "Custom MarkLogic snippeting functions",
+  "repository": "https://github.com/grtjn/ml-snippeting.git"
+}
