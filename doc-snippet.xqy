@@ -1,6 +1,6 @@
 xquery version "1.0-ml";
 
-module namespace snip="http://marklogic.com/snippet";
+module namespace snip = "http://marklogic.com/doc-snippet";
 
 import module namespace search = "http://marklogic.com/appservices/search"
   at "/MarkLogic/appservices/search/search.xqy";
