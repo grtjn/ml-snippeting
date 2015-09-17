@@ -41,4 +41,6 @@ Just change the first line of it as follows:
   </transform-results>
 ```
 
-Note: `perferred-elements` will effectively be ignored.
+Note: `perferred-elements` will effectively be ignored. You can omit that.
+
+Note also: Flattening the document would cause range- and value-queries, to no longer match and giving no highlights. To counteract this snippeting adds a word-query for all values. That might highlight too much, but better than nothing.

@@ -14,7 +14,7 @@ declare function snip:snippet(
 ) as element(search:snippet) {
   search:snippet(
     text { $result//text() },
-    $ctsquery,
+    <cts:and-query>$ctsquery{cts:word-query($ctsquery//cts:value)}</cts:and-query>,
     $options
   )
 };
