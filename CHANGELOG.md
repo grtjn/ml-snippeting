@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.3](https://github.com/grtjn/ml-snippeting/tree/1.0.3) (2015-09-18)
+[Full Changelog](https://github.com/grtjn/ml-snippeting/compare/1.0.2...1.0.3)
+
+**Fixed bugs:**
+
+- Change to include values as word-query breaks [\#2](https://github.com/grtjn/ml-snippeting/issues/2)
+
 ## [1.0.2](https://github.com/grtjn/ml-snippeting/tree/1.0.2) (2015-09-17)
 [Full Changelog](https://github.com/grtjn/ml-snippeting/compare/1.0.1...1.0.2)
 
