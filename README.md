@@ -41,6 +41,26 @@ Just change the first line of it as follows:
   </transform-results>
 ```
 
-Note: `perferred-elements` will effectively be ignored. You can omit that.
+Note: `preferred-elements` will effectively be ignored. You can omit that.
 
 Note also: Flattening the document would cause range- and value-queries, to no longer match and giving no highlights. To counteract this snippeting adds a word-query for all values. That might highlight too much, but better than nothing.
+
+## exclude-snippet
+
+A snippeting function that excludes elements or JSON properties by name. Uses a new `excluded-matches` configuration element that takes the same configuration as `preferred-elements`. (An `excluded-elements` config element is also available; it only works with XML elements).
+
+All other `transform-results` configuration options are supported.
+
+```xml
+  <transform-results apply="snippet" ns="http://marklogic.com/exclude-snippet" at="/ext/mlpm_modules/ml-snippeting/exclude-snippet.xqy">
+    <excluded-matches>
+      <json-property>ssn</json-property>
+      <json-property>triple</json-property>
+      <element ns="" name="ssn"/>
+      <element ns="http://marklogic.com/semantics" name="triple"/>
+    </excluded-matches>
+    <max-matches>1</max-matches>
+    <max-snippet-chars>150</max-snippet-chars>
+    <per-match-tokens>20</per-match-tokens>
+  </transform-results>
+```
